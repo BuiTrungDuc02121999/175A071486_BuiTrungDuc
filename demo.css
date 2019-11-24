@@ -1,0 +1,21 @@
+*{box-sizing:border-box;}
+.container{width:700px;height:auto;margin:0 auto;font-size:16px;}
+table{width:100%;}
+.flex{display:flex;}
+.flex_between{display:flex;
+justify-content:space-between;}
+td[rowspan="5"]{width:30%;font-size:20px;vertical-align:top;}
+.vanBan{width:70%;}
+.head_content{color:white;font-weight:bold;background-color:blue;}
+.content_firstLine{color:blue;font-weight:bold;}
+.ve_dau_trang{background-color:lightgrey;color:blue;float:right;font-size:20px;}
+div.head_contain{display:flex;
+justify-content:space-between}
+.head_contain div.image{width:20%;height:120px;border:1px dashed black;}
+#banner{display:flex;margin-left: auto;margin-right: auto; width:50%;}
+#banner div{font-weight:bold;color:blue;}
+#h1{font-size:50px;padding-top:85px;padding-right:20px }
+#h2{font-size:40px;padding-top:90px;padding-right:20px}
+#h3{font-size:30px;padding-top:100px;padding-right:20px}
+
+

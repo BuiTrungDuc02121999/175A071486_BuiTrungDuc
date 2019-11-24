@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo form và các điều khiển </title>
+</head>
+<body>
+   <h1 align="center" style="color:blue;">Đăng ký du lịch</h1> 
+   <table border="1" align="center" style="background-color: 	#F0E68C; border-color:	#1E90FF ;" cellspacing="0" width="700px" > 
+    <tr>
+        <td style="color:#1E90FF ;" size ="20">Họ và tên</td>
+        <td><input type="text" size="60" id="a"></td>
+    </tr>
+    <tr>
+         <td style="color:#1E90FF ;">Địa chỉ</td>
+        <td><input type="text" size="50" id="b"></td>
+    </tr>
+    <tr>
+        <td style="color:#1E90FF ;">Điện thoại</td>
+        <td><input type="text" size="30" id="c"></td>
+    </tr>
+    <tr>
+         <td style="color:#1E90FF ;" width ="200">Khách hàng Việt Nam</td>
+        <td><input type="checkbox" id="d" checked></td>
+    </tr>
+    <tr>
+        <td style="color:#1E90FF ;">Chọn tour</td>
+        <td>
+            <select>
+                    <optgroup label="Miền Bắc"></optgroup>
+                    <option >Hà Nội-Cát Bà-Hạ Long</option>
+                    <option>Hà Nội-Từ Sơn-Bắc Ninh</option>
+                    <option>Hà Nội-Cát Bà-Tuần Châu</option>
+                    <optgroup label="Miền Trung"></optgroup>
+                    <option>Huế-Bạch Mã-Đà Nẵng</option>
+                    <option>Nha Trang-Đà Lạt</option>
+                    <option>Buôn Mê Thuột-Gia Lai-KonTum</option>
+                    <optgroup label="Miền Nam"></optgroup>
+                    <option>TP.HCM-Cần Thơ-Cà Mau</option>
+                    <option >TP.HCM-Mỹ Tho</option>
+                     <option>TP.HCM-Cali</option>
+                    </select>
+        </td>
+    </tr>
+    <tr style="color:#1E90FF ;">
+        <td>Phương tiện</td>>
+        <td><input type="radio" name="gt" id="nam">Máy bay
+             <input type="radio" name="gt" id="nữ">Xe ô tô
+        </td>
+    </tr>
+    <tr style="color:#1E90FF ;"" >
+        <td align="center" colspan="2" class="center">
+            <fieldset style=" width: 350px; height: 55px;border-color: brown;"><legend align = center style="font-style: italic; color:	#E9967A;"> Số lượng đoàn khách</legend>
+            Người lớn<input type="text" name="nl"/ size="5"> Trẻ con<input type="text" name="te" size="5"/>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+         <td style="color: #1E90FF;">Ghi chú thêm</td>
+            <td><select id="e" style="width: 250px;" multiple>
+                <option >Còn trẻ em dưới 6 tuổi</option>
+                <option >Có 2 người ăn chay</option>
+            </select></td>
+    </tr>
+    <tr>
+            <td colspan="2" align="center"><input type="button" id="g" value="Đồng ý" onclick=ocl()></td>
+        </tr>
+    <tr>
+            <td colspan="2"> 
+                <div id="abc" align="center"></div>
+            </td>
+    </tr>
+        <script>function ocl()
+            {document.getElementById("abc").innerText= "Bạn đã đăng kí thành công"
+            document.getElementById("abc").style.color="#E9967A"}
+        </script>
+   </table>
+</body>
+</html>

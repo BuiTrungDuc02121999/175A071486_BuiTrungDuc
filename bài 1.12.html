@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Tạo form và các điều khiển </title>
+</head>
+<body>
+    <h1 align = "center" style="color: 	#2E8B57;">Phiếu đăng kí tham gia chương trình khuyến mãi</h1>
+    <table align="center" style="background-color: 	#98FB98;" border="1"cellspacing="0" width="500px">
+     <tr>
+         <td style="color:#2E8B57 ;">Họ và tên</td>
+         <td><input type="text" id="a" size="50"></td>
+     </tr>
+     <tr>
+        <td style="color:#2E8B57 ;">Địa chỉ</td>
+        <td><input type="text" id="b" size="45"></td>
+    </tr>
+    <tr>
+         <td style="color:#2E8B57 ;">Điện thoại</td>
+         <td><input type="text" id="c" size="40"></td>
+    </tr>
+    <tr style="color: #2E8B57;">
+        <td style="color:#2E8B57" >Phái</td>
+        <td><input type="radio" name="gt" id="nam">Nam
+             <input type="radio" name="gt" id="nữ">Nữ
+        </td>
+    </tr>
+    <tr style="color: #2E8B57;">
+        <td>Nghề nghiệp</td>
+        <td><select id ="d">
+                <option >Bác sĩ</option>
+                <option>Giáo viên</option>
+                <option>Kĩ sư</option>
+                <option>Khác</option>
+            </select></td>
+        </td>
+    </tr>
+    <tr  >
+        <td style="color: #2E8B57;">Chọn sản phẩm tham gia</td>
+        <td><select id="e" size="4" multiple>
+            <option >Kem đánh răng</option>
+            <option >Bột giặt</option>
+            <option >Dầu gội đầu</option>
+            <option >Sữa tắm</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td style="color: #2E8B57;">Số người dự đoán tham gia</td>
+        <td><input type="text" id="f" size="10"></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><input type="button" id="g" value="Đồng ý" onclick=ocl()></td>
+    </tr>
+    <tr>
+        <td colspan="2"> 
+            <div id="abc" align="center"></div>
+        </td>
+    </tr>
+    <script>function ocl()
+        {document.getElementById("abc").innerText= "Bạn đã đăng kí thành công"}
+    </script>
+    </table>
+</body>
+</html>
